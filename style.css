@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  background: hsl(204, 43%, 93%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Karla", sans-serif;
+  font-size: 0.9rem;
+}
+.card {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 4rem 2rem;
+}
+/* ------------------------------------------------------uppper section------------------------------------------------------ */
+.up-card {
+  padding: 2rem;
+}
+.up-card h2 {
+  color: hsl(179, 62%, 40%);
+  margin-bottom: 1.5rem;
+}
+.up-card h3 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1rem;
+}
+.up-card p {
+  color: hsl(218, 22%, 67%);
+}
+.down-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+}
+/* -------------------------------------------------------bottom-left section---------------------------------------------------- */
+.left-down {
+  padding: 2rem;
+  background: hsl(179, 58%, 43%);
+}
+.left-down h3 {
+  margin-bottom: 1rem;
+}
+.left-down .price {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.5rem;
+}
+.left-down .price h1 {
+  font-size: 2rem;
+}
+.left-down .price span {
+  opacity: 0.5;
+}
+.left-down button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 0.9rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background: hsl(71, 73%, 54%);
+  color: white;
+}
+/* ------------------------------------------------------bottom-right section------------------------------------------------------ */
+.right-down {
+  padding: 2rem;
+  padding-right: 5rem;
+  background: hsl(179, 60%, 46%);
+  line-height: 1.5;
+}
+.right-down h3 {
+  margin-bottom: 1rem;
+}
+.right-down p {
+  font-size: 0.8rem;
+}
+@media (max-width: 620px) {
+  .down-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
